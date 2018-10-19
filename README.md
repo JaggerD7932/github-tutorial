@@ -18,7 +18,7 @@ There are several IDEs to choose from, but there's only one Github.
 To make a Github account, you first need to navigate to Github and click the create an account icon.  
 From there, follow the steps, making sure to use your HSTAT email username if you're from HSTAT.  
 Once you're done there, you can get your SSH key set up.
-> For those who don't know, an SSH key is used because it is a "Secure Shell", which meas that it will keep your files scure even if your network isn't.  
+> For those who don't know, an SSH key is used because it is a "Secure Shell", which means that it will keep your files scure even if your network isn't.  
 > It's also great becuase you won't need to log in every time you want to access what you use SSH with, which makes getting into your IDE's code way easier.  
 
 To do that, you'll want to follow these steps:
