@@ -8,7 +8,7 @@ _by Jagger D'Ugo_
 Git is version control, like taking snapshots of code.  
 Github is a cloud for git, which allows us to see these snapshots. It also has the added bonus of being a great way for people to collaborate with each other on their code as well.  
 
-A good way to think of the two is like Git being a photographer who takes photos, where Github is like the album where you keep all the photos you've taken.
+> A good way to think of the two is like Git being a photographer who takes photos, where Github is like the album where you keep all the photos you've taken.
 
 ---
 ## Initial Setup
@@ -24,11 +24,12 @@ Once you're done there, you can get your SSH key set up.
 To start, you'll want to follow these steps:
 1. Look at the top right corner, and click the profile icon, and navigate to settings.
 2. On the left sidebar, click on SSH and GPG.
-3. Add the title as "cloud9", assuming you're using Cloud9.
-    * if not, you'll want to title it based on your own IDE.
-4. 
+3. Assuming you're using Cloud9, add the title "cloud9" to the setup.
+4. Continuing with this assumption, go to your Cloud9, and find the gear icon on the top right, and go to the SSH keys tab.
+5. After that, copy and paste the second SSH key into Github (it should start with ssh-rsa), and then add your SSH key.
+6. Once you're done all that, you should see "Hi <your username>! You've successfully authenticated, but GitHub does not provide shell access._" in your c9, after inputting "ssh -T git@github.com"
 
-After finishing that, 
+After finishing that, you're ready to move on to your **Repository Setup!**
 
 ---
 ## Repository Setup
