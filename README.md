@@ -61,12 +61,40 @@ You can also use this command in the future to just generally see where we'll pu
 Speaking of pushing changes...
 
 Once you have a remote, we can finally push our changes to it (which is sort of the whole point of Github in the first place).  
-
+To do this, we simply need to enter the command `git push -u origin master`, only using `git push` every subsequent time.  
+You can look back on your remote and refresh the page to see that we've now successfully pushed our changes.  
+Now that we've finished here, we can move to the workflow of Github and its commands.
 
 ---
 ## Workflow & Commands
 
-(use unordered list for commands)
+### Command summary:
+Command Line commands:
+* `cd`: change directory (used to navigate between directories)
+    * Use cd .. to go back a directory (needs to be done before moving to a level equal or greater than the current one)
+* `mkdir`: make a new directory
+* `rmdir`: delete a directory (will not work if done within the directory being deleted)
+* `touch`: make a new file
+* `c9`: will open a file is using Cloud9
+* `rm -rf`: will remove a directory, even if it has subdirectories/files within it
+* `mv`: move or rename a file (result will change depending on whether the desired input already exists as a directory or not)
+
+Git commands:
+* `git status`: show any changed files in red, and any changed files on the stage in green, so that you know what needs to be committed
+* `git init`: initializes your repository, making it ready to save changes (only needs to be done once)
+* `rm -rf .git`: essentially does the oposite of git init, by deleting the .git file made by that command
+* `git add`: moves a file onto the stage before a commit
+* `git commit -m <message>`: commits the changes made to a file in the staging area
+* `git push`: moves new commits to the remote
+* `git remote add -origin URL`: creates a remote repository on Github for your local repo to connect to
+* `git remote -v`: shows where your changes will be pushed to (useful if you have multiple remotes)
+* `git push -u origin master`: will push your changes "upstream", meaning any future pushes will be added with...
+* `git push`: does the same as the previous command, but with added convenience
+* `git reset HEAD`: used to "un-add" a file from the stage
+* `git checkout --`: used to discard changes in the working directory (like an open file in c9)
+
+### Basic workflow in Github:
+
 
 ---
 ## Rolling Back Changes
