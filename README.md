@@ -55,7 +55,13 @@ If you want to do that, you'll want to set up a "remote repository".
 As stated before, this is basically a photo album in which we can visually see all of the changes we have made since our first commit until now, it's effectively another repository, just on Github.  
 To set up your remote, you'll first want to create a repository on Github, making sure to use the same name as your local one.  
 After doing this, you'll need to copy the URL on the Github repository, making sure to use the SSH link again, and then navigate back to Cloud9.  
-Now, enter in `git remote add -origin URL`, replacing `"URL"` with the URL you copied from Github.
+Now, enter in `git remote add -origin URL`, replacing `"URL"` with the URL you copied from Github.  
+Once you've done this, you can try entering the command `git remote -v`, just to make sure there's a place to push things to.  
+You can also use this command in the future to just generally see where we'll push our changes to.  
+Speaking of pushing changes...
+
+Once you have a remote, we can finally push our changes to it (which is sort of the whole point of Github in the first place).  
+
 
 ---
 ## Workflow & Commands
