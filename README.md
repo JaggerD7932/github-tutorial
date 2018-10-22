@@ -113,4 +113,11 @@ To do this, simply add in `git checkout -- <file>`, substituting `<file>` with t
 You should see the changes erase themselves instantly, which is what we want.  
 Once you've gotten this to work, we'll try something a little bigger.  
 
-If you want to remove a file from the stage, you'll want to use `git reset HEAD`
+If you want to remove a file from the stage, you'll want to use `git reset HEAD <file>`, which will remove your desired file from the stage, as promised.
+
+Perhaps you've already committed a change, however, and want to undo this commit.  
+It might seem impossible to do, but there are commands for this, and the first one is `git reset --soft HEAD~1`  
+Using this command will basically undo your commit, but keep your changes on your working directory.  
+While this is useful, we might want to delete our changes in our own directories as well.  
+To do this, we use a similar command, `git reset --hard HEAD~1`.  
+> To make sure this command works, we can try using `git status`, only to see that we have no changes.
