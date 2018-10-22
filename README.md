@@ -94,7 +94,23 @@ Git commands:
 * `git checkout --`: used to discard changes in the working directory (like an open file in c9)
 
 ### Basic workflow in Github:
-
+A good routine to follow when working with Github is as follows:
+1) Enter your desired command, and make some kind of change
+2) Enter `git status`, just to see what's happened, and if you need to backtrack
+    * Follow steps 1 and 2 over and over again as necessary, but every so often (every few minutes, or at least once per session), you'll want to move on
+3) You'll want to `git add` your changes to the stage, s go ahead and do that
+4) Now you can `git commit` whatever you need to, making sure to use an appropriate message, and then...
+5) Use `git push`, and check to make sure your changes went through. If they did, you're golden! If not, remember, always use `git status` to see where you go wrong before things get out of hand
 
 ---
 ## Rolling Back Changes
+
+If you took a look at the command list already, you might have a bit of an idea of what's coming next...  
+We're going to be looking at how to rollback (or undo) changes using Github.  
+
+Let's start at the smallest level, which would be rolling back changes made in a file.  
+To do this, simply add in `git checkout -- <file>`, substituting `<file>` with the name of your file.  
+You should see the changes erase themselves instantly, which is what we want.  
+Once you've gotten this to work, we'll try something a little bigger.  
+
+If you want to remove a file from the stage, you'll want to use `git reset HEAD`
