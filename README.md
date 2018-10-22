@@ -34,7 +34,17 @@ After finishing that, you're ready to move on to your **Repository Setup!**
 ---
 ## Repository Setup
 
+If you're ready to make a repository, you'll first want to navigate to your IDE (we'll continue to use Cloud9 as the example), and get into whatever folder you want to work in.
+Simply enter in `git init`, and your folder will be converted into a repository.  
+What this now means is that your "repo" can save changes to github, and you can even see these when logged in.
+> Note: Make sure you use `git init` within the actual folder you want to work in, not your whole workspace, otherwise you'll have to commit changes within every folder you have, instead of being able to do it with individual repos.  
 
+Now that you've initialized, try creating a file (we'll use a basic text file for this example), and add something to it.  
+After doing this, you'll want to add this file to the stage.  
+Going back to our photograph analogy from before, adding a file to the stage is like moving it into the shot the photographer will take.  
+To do this, type in `git add <filename>`, with `<filename>` being whatever you've called the file.
+
+With the file on the stage, you can now "commit" your changes, which is 
 
 ---
 ## Workflow & Commands
