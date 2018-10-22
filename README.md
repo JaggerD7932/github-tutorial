@@ -92,6 +92,10 @@ Git commands:
 * `git push`: does the same as the previous command, but with added convenience
 * `git reset HEAD`: used to "un-add" a file from the stage
 * `git checkout --`: used to discard changes in the working directory (like an open file in c9)
+* `git reset soft HEAD~1`: used to remove a commit, but keep your changes in your working directory  
+* `git reset hard HEAD~1`: used to remove a commit, **and** remove your changes from the working directory
+* `git push -f origin <last known good commit:branch name>`: used to completely remove a push from your Github repository
+>Be careful with this one, because if used on a repo with multiple users who frequently push and pull, you will likely corrupt your repo
 
 ### Basic workflow in Github:
 A good routine to follow when working with Github is as follows:
@@ -121,3 +125,7 @@ Using this command will basically undo your commit, but keep your changes on you
 While this is useful, we might want to delete our changes in our own directories as well.  
 To do this, we use a similar command, `git reset --hard HEAD~1`.  
 > To make sure this command works, we can try using `git status`, only to see that we have no changes.
+
+There is but one command more powerful than this one... One that can remove even a pushed commit from a repo...  
+This command... is `git push -f origin <last known good commit:branch name>`  
+*Use its power wisely, for it can corrupt any repos used by more than one mere mortal...*
